@@ -15,12 +15,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 125px;
-  width: 275px;
+  height: 75px;
+  width: 200px;
   background: rgba(255, 255, 255, 0.35);
   box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5px);
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -33,7 +33,7 @@ body {
   justify-content: center;
   color: #502F49;
   background:rgba(255, 255, 255, 0.61);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -41,27 +41,27 @@ body {
 
 .watch span {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .watch span.time {
-  font-size: 15px;
+  font-size: 12px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 200px) {
   body {
 
   }
   .watch {
-    height: 200px;
-    width: 370px;
+    height: 75px;
+    width: 200px;
   }
   .watch div {
     height: 140px;
     width: 100px;
   }
   .watch span {
-    font-size: 50px;
+    font-size: 12px;
   }
 
   .watch span.time {
