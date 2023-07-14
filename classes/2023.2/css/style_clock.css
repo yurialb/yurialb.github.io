@@ -1,17 +1,21 @@
-body {
-  background-color: #403060;
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.watch {
+body {
   display: flex;
   position: absolute;
   right: 10px;
   bottom: 10px;
+  /*align-items: center;
+  justify-content: center;*/
+}
+
+.watch {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -50,7 +54,7 @@ body {
 
 @media (max-width: 600px) {
   body {
-
+    
   }
   .watch {
     height: 200px;
