@@ -4,60 +4,34 @@
 <title>Disciplinas</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<!-- Style CSS -->
-<link rel="stylesheet" href="css/menu.css">
-<link rel="stylesheet" href="css/style.css">
-<!-- Demo CSS (No need to include it into your project) -->
-<link rel="stylesheet" href="css/demo.css">
-
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('../../img/classes-bg.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
 </head>
 <body>
 
-<div class="action">
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p>Prof. Me. Yuri Albuquerque</p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><a href="../../index.html"><button class="w3-button w3-black">Home</button></a></p>
+    <p><button onclick="document.getElementById('bioestatistica').style.display='block'" class="w3-button w3-black">Bioestat&iacute;stica</button></p>
+    <p><button onclick="document.getElementById('informatica_aplicada_saude').style.display='block'" class="w3-button w3-black">Inform&aacute;tica Aplicada &agrave; Sa&uacute;de</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">Falar com o Professor</button></p>
+  </div>
   <div class="w3-display-bottomleft w3-container">
     <p class="w3-xlarge">Bem vindos!</p>
   </div>
-  <h1>Prof. Me. Yuri Albuquerque</h1>
-</div>
-
-<div class="icon-bar">
-  <!-- pagina principal -->
-  <a href="../../index.html" class="active" href="#"><i class="fa fa-home"></i></a>
-
-  <!-- Bioestatistica -->
-  <abbr title="Bioestat&iacute;stica">
-    <a href="#"><i class="fa fa-bar-chart" onclick="document.getElementById('bioestatistica').style.display='block'"></i></a>
-  </abbr>
-
-  <!-- Fluidos biologicos -->
-  <abbr title="Flu&iacute;dos Biol&oacute;gicos">
-    <a href="#"><i class="fa fa-tint"></i></a>
-  </abbr>
-
-  <!-- Hematologia -->
-  <abbr title="Hematologia">
-    <a href="#"><i class="fa fa-heart"></i></a>
-  </abbr>
-
-  <!-- Informatica aplicada a saude -->
-  <abbr title="Inform&aacute;tica Aplicada &agrave; Sa&uacute;de">
-    <a href="#"><i class="fa fa-medkit" onclick="document.getElementById('informatica_aplicada_saude').style.display='block'"></i></a>
-  </abbr>
-
-  <!-- Microbiologia & Imunologia -->
-  <abbr title="Microbiolgia &amp; Imunologia">
-    <a href="#"><i class="fa fa-shield"></i></a>
-  </abbr>
-
-  <!-- Falar com professor -->
-  <abbr title="Falar com o Professor">
-    <a href="#"><i class="fa fa-whatsapp" onclick="document.getElementById('contact').style.display='block'"></i></a>
-  </abbr>
-
 </div>
 
 <!-- Menu Modal | Bioestatística -->
@@ -129,19 +103,16 @@
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-black">
       <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1>Falar com o Professor!</h1>
+      <h1>Fale comigo!</h1>
     </div>
     <div class="w3-container">
-      <p><h3>Responderei sua mensagem o mais breve poss&iacute;vel.</h3></p>
-      <p><a href="mailto:yuri.albuquerque@outlook.com?subject=UniSãoMiguel"><i class="fa fa-envelope"></i>E-mail</a> |
-      <a href="https://t.me/yurialbuquerque" target="_blank"><i class="fa fa-telegram"></i>Telegram</a> |
-      <a href="https://wa.me/5581991631292" target="_blank"><i class="fa fa-whatsapp"></i>WhatsApp</a></p>
+      <p>Responderei sua mensagem o mais breve poss&iacute;vel</p>
+      <p><a href="mailto:yuri.albuquerque@outlook.com?subject=UniSãoMiguel">E-mail</a> |
+      <a href="https://t.me/yurialbuquerque" target="_blank">Telegram</a> |
+      <a href="https://wa.me/5581991631292" target="_blank">WhatsApp</a></p>
     </div>
   </div>
 </div>
-
-<!-- Script JS -->
-<script src="./js/script.js"></script>
 
 </body>
 </html>
