@@ -9,7 +9,7 @@ body{
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
   font-size: 15px;
-  background: #eee;
+  background: #fff;
 }
 .intro{
    background: #fff;
@@ -77,7 +77,7 @@ a.btn:hover{
    text-decoration: none;
 }
 .credit a:hover{
-   color: #1DBF73; 
+   color: #1DBF73;
 }
 .credit a:hover:after{
     font-family: FontAwesome;
@@ -89,7 +89,7 @@ a.btn:hover{
 main{
   background: #fff;
   padding:: 20px;
-  
+
 }
 
 article li{
@@ -111,12 +111,12 @@ article p{
    font-size: 15px;
     line-height: 1.5;
 }
- 
+
 @media only screen and (min-width: 720px){
     main{
       max-width: 720px;
       margin-left: auto;
-      margin-right: auto; 
+      margin-right: auto;
       padding: 24px;
     }
 

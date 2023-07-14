@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Disciplinas</title>
+<title>Disciplinas | 2023.2</title>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
 <!-- Style CSS -->
 <link rel="stylesheet" href="css/menu.css">
 <link rel="stylesheet" href="css/style.css">
-<!-- Demo CSS (No need to include it into your project) -->
 <link rel="stylesheet" href="css/demo.css">
 
 </head>
@@ -35,12 +37,12 @@
 
   <!-- Fluidos biologicos -->
   <abbr title="Flu&iacute;dos Biol&oacute;gicos">
-    <a href="#"><i class="fa fa-tint"></i></a>
+    <a href="#"><i class="fa fa-tint" onclick="document.getElementById('fluidos_biologicos').style.display='block'"></i></a>
   </abbr>
 
   <!-- Hematologia -->
   <abbr title="Hematologia">
-    <a href="#"><i class="fa fa-heart"></i></a>
+    <a href="#"><i class="fa fa-heart" onclick="document.getElementById('hematologia').style.display='block'"></i></a>
   </abbr>
 
   <!-- Informatica aplicada a saude -->
@@ -50,7 +52,7 @@
 
   <!-- Microbiologia & Imunologia -->
   <abbr title="Microbiolgia &amp; Imunologia">
-    <a href="#"><i class="fa fa-shield"></i></a>
+    <a href="#"><i class="fa fa-shield" onclick="document.getElementById('micro_imuno').style.display='block'"></i></a>
   </abbr>
 
   <!-- Falar com professor -->
@@ -62,33 +64,68 @@
 
 <!-- Menu Modal | Bioestatística -->
 <div id="bioestatistica" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black w3-display-container">
+  <div class="w3-modal-content w3-animate-zoom w3-border w3-border-black">
+    <div class="w3-container w3-dark-grey w3-display-container">
       <span onclick="document.getElementById('bioestatistica').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1>Bioestat&iacute;stica - 2023.2 - 2° de 08h00 &agrave;s 12h30</h1>
+      <h1>&#128201;Bioestat&iacute;stica - 2023.2</br>
+        6&ordf; de 08h00 &agrave;s 11h40 (Ed. F&iacute;sica)</h1>
     </div>
     <div class="w3-container">
       <h5>Modelo de Relat&oacute;rio <b><a href="./archives/Modelo_Relatório_São_Miguel.dotm" target="_blank">Clique aqui!</a></b></h5></b>
       <h3>1° UNIDADE</h3>
       <!--<h5>Aula 01 - 05/04/2023 <b><a href="./archives/anatomia_humana/2023.1/aulas/01_Aula_05_04_2023/01_Aula_-_introducao_a_anatomia_05_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
       <h5>Atividade 01 - 05/04/2023 (Para Colorir) <b><a href="./archives/anatomia_humana/2023.1/atividades/01_Atividade_05_04_2023/Atividade_01_-_introducao_a_anatomia_humana_05_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
-      <h5>Atividade 01 - 05/04/2023 (Resumo Cr&iacute;tico) <b><a href="./archives/anatomia_humana/2023.1/atividades/01_Atividade_05_04_2023/Atividade_01_-_artigo_para_resumo_critico_05_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
-      <h5>Aula 02 - 12/04/2023 <b><a href="./archives/anatomia_humana/2023.1/aulas/02_Aula_12_04_2023/02_Aula_02_-_ossos_(parte_1).pdf" target="_blank">Clique aqui!</a></b></h5>
-      <h5>Atividade 03 - 12/04/2023 (Para Colorir) <b><a href="./archives/anatomia_humana/2023.1/atividades/03_Atividade_12_04_2023/03_Atividade_12_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
-      <h5>Aula 03 - 19/04/2023 <b><a href="./archives/anatomia_humana/2023.1/aulas/03_Aula_19_04_2023/03_Aula 03_-_sistema_muscular_-_19_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
-      <h5>Aula 04 - 26/04/2023 <b><a href="./archives/anatomia_humana/2023.1/aulas/04_Aula_26_04_2023/04_Aula_junturas_-_26_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
-      <h5>Atividade 04 - 26/04/2023 <b><a href="./archives/anatomia_humana/2023.1/atividades/04_Atividade_24_04_2023/04_Atividade_sistema_muscular_-_26_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
       <h3>2° UNIDADE</h3>
       <h5>Aula 05 - 17/05/2023 <b><a href="./archives/anatomia_humana/2023.1/aulas/05_Aula_17_05_2023/05_Aula_-_sistema_circulatorio_-_17_05_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
       <h5>Aula 06 - 16/03/2023 <b>Clique aqui!</b></h5>
       <h5>1° Avalia&ccedil;&atilde;o - 23/03/2023</h5>
       <h5>Aula 07 - 13/04/2023 <b>Clique aqui!</b></h5>
-      <h5>Aula 08 - 20/04/2023 <b>Clique aqui!</b></h5>
-      <h5>Aula 09 - 27/04/2023 <b>Clique aqui!</b></h5>
-      <h5>Aula 10 - 04/05/2023 <b>Clique aqui!</b></h5>
-      <h5>Aula 11 - 11/05/2023 <b>Clique aqui!</b></h5>
-      <h5>Aula 12 - 18/05/2023 <b>Clique aqui!</b></h5>
-      <h5>Aula 13 - 25/05/2023 <b>Clique aqui!</b></h5>
+      <h5>2° Avalia&ccedil;&atilde;o - 01/06/2023 <b>Clique aqui!</b></h5>-->
+    </div>
+  </div>
+</div>
+
+<!-- Menu Modal | Fluídos Biológicos -->
+<div id="fluidos_biologicos" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-border w3-border-black">
+    <div class="w3-container w3-dark-grey w3-display-container">
+      <span onclick="document.getElementById('fluidos_biologicos').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>&#128167;Flu&iacute;dos Biol&oacute;gicos - 2023.2</br>
+        5&ordf; de 18h40 &agrave;s 21h10 (Biomedicina)</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Modelo de Relat&oacute;rio <b><a href="./archives/Modelo_Relatório_São_Miguel.dotm" target="_blank">Clique aqui!</a></b></h5></b>
+      <h3>1° UNIDADE</h3>
+      <!--<h5>Aula 01 - 05/04/2023 <b><a href="./archives/anatomia_humana/2023.1/aulas/01_Aula_05_04_2023/01_Aula_-_introducao_a_anatomia_05_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
+      <h5>Atividade 01 - 05/04/2023 (Para Colorir) <b><a href="./archives/anatomia_humana/2023.1/atividades/01_Atividade_05_04_2023/Atividade_01_-_introducao_a_anatomia_humana_05_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
+      <h3>2° UNIDADE</h3>
+      <h5>Aula 05 - 17/05/2023 <b><a href="./archives/anatomia_humana/2023.1/aulas/05_Aula_17_05_2023/05_Aula_-_sistema_circulatorio_-_17_05_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
+      <h5>Aula 06 - 16/03/2023 <b>Clique aqui!</b></h5>
+      <h5>1° Avalia&ccedil;&atilde;o - 23/03/2023</h5>
+      <h5>Aula 07 - 13/04/2023 <b>Clique aqui!</b></h5>
+      <h5>2° Avalia&ccedil;&atilde;o - 01/06/2023 <b>Clique aqui!</b></h5>-->
+    </div>
+  </div>
+</div>
+
+<!-- Menu Modal | Hematologia -->
+<div id="hematologia" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-border w3-border-black">
+    <div class="w3-container w3-dark-grey w3-display-container">
+      <span onclick="document.getElementById('hematologia').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>&#128153;Hematologia - 2023.2</br>
+        3&ordf; de 18h40 &agrave;s 21h10 (Biomedicina)</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Modelo de Relat&oacute;rio <b><a href="./archives/Modelo_Relatório_São_Miguel.dotm" target="_blank">Clique aqui!</a></b></h5></b>
+      <h3>1° UNIDADE</h3>
+      <!--<h5>Aula 01 - 05/04/2023 <b><a href="./archives/anatomia_humana/2023.1/aulas/01_Aula_05_04_2023/01_Aula_-_introducao_a_anatomia_05_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
+      <h5>Atividade 01 - 05/04/2023 (Para Colorir) <b><a href="./archives/anatomia_humana/2023.1/atividades/01_Atividade_05_04_2023/Atividade_01_-_introducao_a_anatomia_humana_05_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
+      <h3>2° UNIDADE</h3>
+      <h5>Aula 05 - 17/05/2023 <b><a href="./archives/anatomia_humana/2023.1/aulas/05_Aula_17_05_2023/05_Aula_-_sistema_circulatorio_-_17_05_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
+      <h5>Aula 06 - 16/03/2023 <b>Clique aqui!</b></h5>
+      <h5>1° Avalia&ccedil;&atilde;o - 23/03/2023</h5>
+      <h5>Aula 07 - 13/04/2023 <b>Clique aqui!</b></h5>
       <h5>2° Avalia&ccedil;&atilde;o - 01/06/2023 <b>Clique aqui!</b></h5>-->
     </div>
   </div>
@@ -96,29 +133,43 @@
 
 <!-- Menu Modal | Informática Aplicada à Saúde -->
 <div id="informatica_aplicada_saude" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black w3-display-container">
+  <div class="w3-modal-content w3-animate-zoom w3-border w3-border-black">
+    <div class="w3-container w3-dark-grey w3-display-container">
       <span onclick="document.getElementById('informatica_aplicada_saude').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1>Inform&aacute;tica Aplicada &agrave; Sa&uacute;de - 2023.2 - 2° de 08h00 &agrave;s 12h30</h1>
+      <h1>&#128187;Inform&aacute;tica Aplicada &agrave; Sa&uacute;de - 2023.2</br>
+        2&ordf; de 08h00 &agrave;s 11h40 (Ed. F&iacute;sica)</h1>
     </div>
     <div class="w3-container">
       <h5>Modelo de Relat&oacute;rio <b><a href="./archives/Modelo_Relatório_São_Miguel.dotm" target="_blank">Clique aqui!</a></b></h5></b>
       <h3>1° UNIDADE</h3>
       <!--<h5>Aula 01 - 10/04/2023 <b><a href="./archives/biofisica/2023.1/aulas/01_Aula_introducao_a_biofisica_10_04_2023/01_Aula_introducao_a_biofisica_10_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
       <h5>Aula 02 - 17/04/2023 <b><a href="./archives/biofisica/2023.1/aulas/02_Aula_atomos_moleculas_ions_e_biomoleculas_17_04_2023/02_Aula_-_biofisica_-_atomos_moleculas_ions_e_biomoleculas_-_17_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
-      <h5>Aula 03 - 24/04/2023 <b><a href="./archives/biofisica/2023.1/aulas/03_Aula_agua_e_solucoes_24_04_2023/03_Aula_agua_e_solucoes_24_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
-      <h5>Aula 04 - 08/05/2023 <b><a href="./archives/biofisica/2023.1/aulas/04_Aula_difusao_osmose_tonus_08_05_2023/04_Aula_difusao_osmose_e_tonus_08_05_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
-      <h5>Leitura para Prova - 08/05/2023 <b><a href="./archives/biofisica/2023.1/atividades/atividade_leitura_prova_08_05_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
       <h3>2° UNIDADE</h3>
       <h5>Aula 05 - 22/05/2023 <b><a href="./archives/biofisica/2023.1/aulas/05_Aula_estruturas_supramoleculares_22_05_2023/05_Aula_estruturas_supramoleculares_22_05_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
       <h5>Aula 06 - 29/05 e 05/06/2023 <b><a href="./archives/biofisica/2023.1/aulas/06_e_07_Aulas_radioatividade_e_radiacoes_em_biologia_29_05e_05_06_2023/06_Aula_radioatividade_e_radiacoes_em_biologia_29_05_e_05_06_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
-      <h5>Aula 07 - 13/04/2023 <b>Clique aqui!</b></h5>
-      <h5>Aula 08 - 20/04/2023 <b>Clique aqui!</b></h5>
-      <h5>Aula 09 - 27/04/2023 <b>Clique aqui!</b></h5>
-      <h5>Aula 10 - 04/05/2023 <b>Clique aqui!</b></h5>
-      <h5>Aula 11 - 11/05/2023 <b>Clique aqui!</b></h5>
-      <h5>Aula 12 - 18/05/2023 <b>Clique aqui!</b></h5>
-      <h5>Aula 13 - 25/05/2023 <b>Clique aqui!</b></h5>
+      <h5>2° Avalia&ccedil;&atilde;o - 01/06/2023 <b>Clique aqui!</b></h5>-->
+    </div>
+  </div>
+</div>
+
+<!-- Menu Modal | Microbiolgia & Imunologia -->
+<div id="micro_imuno" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-border w3-border-black">
+    <div class="w3-container w3-dark-grey w3-display-container">
+      <span onclick="document.getElementById('micro_imuno').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>&#9763;Microbiolgia &amp; Imunologia - 2023.2</br>
+        3&ordf; de 08h00 &agrave;s 11h40 (Biomedicina e Farm&aacute;cia)</br>
+        4&ordf; de 08h00 &agrave;s 12h30 (Odontologia)
+      </h1>
+    </div>
+    <div class="w3-container">
+      <h5>Modelo de Relat&oacute;rio <b><a href="./archives/Modelo_Relatório_São_Miguel.dotm" target="_blank">Clique aqui!</a></b></h5></b>
+      <h3>1° UNIDADE</h3>
+      <!--<h5>Aula 01 - 10/04/2023 <b><a href="./archives/biofisica/2023.1/aulas/01_Aula_introducao_a_biofisica_10_04_2023/01_Aula_introducao_a_biofisica_10_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
+      <h5>Aula 02 - 17/04/2023 <b><a href="./archives/biofisica/2023.1/aulas/02_Aula_atomos_moleculas_ions_e_biomoleculas_17_04_2023/02_Aula_-_biofisica_-_atomos_moleculas_ions_e_biomoleculas_-_17_04_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
+      <h3>2° UNIDADE</h3>
+      <h5>Aula 05 - 22/05/2023 <b><a href="./archives/biofisica/2023.1/aulas/05_Aula_estruturas_supramoleculares_22_05_2023/05_Aula_estruturas_supramoleculares_22_05_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
+      <h5>Aula 06 - 29/05 e 05/06/2023 <b><a href="./archives/biofisica/2023.1/aulas/06_e_07_Aulas_radioatividade_e_radiacoes_em_biologia_29_05e_05_06_2023/06_Aula_radioatividade_e_radiacoes_em_biologia_29_05_e_05_06_2023.pdf" target="_blank">Clique aqui!</a></b></h5>
       <h5>2° Avalia&ccedil;&atilde;o - 01/06/2023 <b>Clique aqui!</b></h5>-->
     </div>
   </div>
@@ -126,8 +177,8 @@
 
 <!-- Contact Modal -->
 <div id="contact" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container w3-black">
+  <div class="w3-modal-content w3-animate-zoom w3-border w3-border-black">
+    <div class="w3-container w3-dark-grey">
       <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
       <h1>Falar com o Professor!</h1>
     </div>
